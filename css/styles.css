@@ -80,12 +80,17 @@ ul {
   padding-top: 16px;
   font: 700 26px 'Raleway', sans-serif;
   text-decoration: none;
-  color: black;
-}
-.logo_after {
   color: var(--blue);
 }
-.logo:hover {
+.logo_after {
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  font: 700 26px 'Raleway', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.logo_after:hover {
   color: black;
 }
 .hero {
