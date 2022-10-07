@@ -150,6 +150,7 @@ ul {
   gap: 30px;
 }
 .card {
+  border: 1px solid #EEEEEE;
   text-align: center;
   background-color: #fff;
 }
