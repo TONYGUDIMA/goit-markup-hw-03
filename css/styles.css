@@ -15,7 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  width: 1600px;
+  max-width: 1600px;
 }
 a {
   color: var(--lblack);
@@ -53,6 +53,15 @@ ul {
   padding-top: 22px;
   gap: 50px;
 }
+.navigation_list li {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .contacts {
   list-style: none;
   display: flex;
@@ -66,15 +75,17 @@ ul {
   color: var(--blue);
 }
 .logo {
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   padding-top: 16px;
   font: 700 26px 'Raleway', sans-serif;
-  color: var(--blue);
   text-decoration: none;
+  color: black;
 }
-.logo::after {
-  content: "Studio";
+.logo_after {
+  color: var(--blue);
+}
+.logo:hover {
   color: black;
 }
 .hero {
@@ -93,7 +104,7 @@ ul {
   color: var(--white);
   margin-bottom: 20px;
   letter-spacing: 0.06em;
-  line-height: 60px;
+  line-height: 1.36;
 }
 .btn {
   position: relative;
@@ -106,7 +117,7 @@ ul {
   color: var(--white);
   font: 700 16px 'Roboto', sans-serif; 
   letter-spacing: 0.06em;
-  line-height: 30px;
+  line-height: 1.85;
 }
 .btn:hover {
   opacity: 0.9;
@@ -133,7 +144,7 @@ ul {
 .section.white1 h3 {
   text-transform: uppercase;
   font: 700 14px 'Roboto', sans-serif; 
-  line-height: 16px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .section.white2 h2 {
@@ -141,7 +152,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   font-size: 36px;
@@ -161,7 +172,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -170,7 +181,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em; 
 }
@@ -180,7 +191,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -203,25 +214,27 @@ ul {
   padding-top: 60px;
 
 }
+.logo_footer {
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  font: 700 26px 'Raleway', sans-serif;
+  text-decoration: none;
+  color: var(--white);
+}
+.logo_footer:hover {
+  color: var(--white);
+}
 .address {
   padding-top: 20px;
 }
-.address a {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--white);
-  text-decoration: none;
-}
+
 .address a:hover {
   color: var(--blue);
   cursor: pointer;
 }
 
-.address ul li a {
+.footer_links {
   color: #FFFFFF99;
   text-decoration: none;
   padding-bottom: 6px;
@@ -229,7 +242,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .address ul li  {
@@ -239,10 +252,25 @@ ul {
   color: var(--blue);
   cursor: pointer;
 } 
+.geo {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  text-decoration: none;
+}
+.geo :hover {
+  color: var(--blue);
+  cursor: pointer;
+}
 
 /* ----------------------PORTFOLIO STYLES-------------------------- */
 
 .projects {
+  max-width: 1200px;
   margin-bottom: 294px;
   position: relative;
   top: 182px;
@@ -266,7 +294,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects p {
@@ -274,7 +302,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--lgray);
   padding: 10px;
@@ -306,7 +334,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 }
