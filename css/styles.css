@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap');
 :root {
   --blue:#2196F3;
   --dgray:#2F303A;
@@ -45,6 +44,10 @@ ul {
   padding: 0px;
 }
 .nav {
+  display: flex;
+  gap: 93px;
+}
+.navigation_list {
   list-style: none;
   display: flex;
   padding-top: 22px;
@@ -63,8 +66,10 @@ ul {
   color: var(--blue);
 }
 .logo {
+  line-height: 31px;
+  letter-spacing: 0.03em;
   padding-top: 16px;
-  font: 26px 'Raleway', sans-serif;
+  font: 700 26px 'Raleway', sans-serif;
   color: var(--blue);
   text-decoration: none;
 }
@@ -77,16 +82,18 @@ ul {
   height: 600px;
 }
 .hero h1 {
-  text-align: center;
-  font-size: 44px;
   position: relative;
   width: 696px;
   left: 452px;
   right: 452px;
   top: 200px;
   text-transform: uppercase;
+  text-align: center;
+  font: 900 44px 'Roboto', sans-serif;
   color: var(--white);
   margin-bottom: 20px;
+  letter-spacing: 0.06em;
+  line-height: 60px;
 }
 .btn {
   position: relative;
@@ -97,6 +104,9 @@ ul {
   border-radius: 4px;
   background-color: var(--blue);
   color: var(--white);
+  font: 700 16px 'Roboto', sans-serif; 
+  letter-spacing: 0.06em;
+  line-height: 30px;
 }
 .btn:hover {
   opacity: 0.9;
@@ -113,14 +123,27 @@ ul {
   gap: 30px;
 }
 .section.white1 p {
-  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;  
+  letter-spacing: 0.03em;
 }
 .section.white1 h3 {
-  font-size: 14px;
-  font-weight: 700;
+  text-transform: uppercase;
+  font: 700 14px 'Roboto', sans-serif; 
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 .section.white2 h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
   font-size: 36px;
   font-weight: 700;
 }
@@ -134,22 +157,40 @@ ul {
   padding-bottom: 94px;
 }
 .section.grey h3 {
-  font-size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .section.grey p {
-  font-size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em; 
 }
 .section h2 {
   align-self: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .cards {
   display: flex;
   gap: 30px;
 }
 .card {
+  width: 270px;
+  height: 368px;
   border: 1px solid #EEEEEE;
   text-align: center;
   background-color: #fff;
@@ -166,7 +207,12 @@ ul {
   padding-top: 20px;
 }
 .address a {
+  font-family: 'Roboto';
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: var(--white);
   text-decoration: none;
 }
@@ -178,7 +224,13 @@ ul {
 .address ul li a {
   color: #FFFFFF99;
   text-decoration: none;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 .address ul li  {
   padding-top: 20px;
@@ -198,6 +250,7 @@ ul {
   bottom: 94px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .project {
   overflow: auto;
@@ -206,16 +259,23 @@ ul {
   border: 1px solid #EEEEEE;
 }
 .projects h2 {
-
   margin: 0;
   color: var(--lblack);
+  padding: 24px 10px 10px 24px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  padding: 24px 10px 10px 24px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
 .projects p {
-  font-size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
   color: var(--lgray);
   padding: 10px;
   margin-bottom: 10px;
@@ -242,4 +302,11 @@ ul {
   border: 0px;
   background: #F5F4FA;
   border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
