@@ -204,7 +204,6 @@ ul {
   background-color: #fff;
   border: 1px solid #EEEEEE;
 }
-
 .projects h2 {
 
   margin: 0;
@@ -230,16 +229,16 @@ ul {
   display: flex;
   gap: 8px;
 }
-.filter {
-  padding: 6px 22px;
-  border: 0px;
-  background: #F5F4FA;
-  border-radius: 4px;
-}
 .filters :hover {
   background-color: var(--blue);
   color: #FFFFFF;
   opacity: 0.9;
   cursor: pointer;
+  border-radius: 4px;
+}
+.filter {
+  padding: 6px 22px;
+  border: 0px;
+  background: #F5F4FA;
   border-radius: 4px;
 }
