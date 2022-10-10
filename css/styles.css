@@ -12,10 +12,15 @@ ul {
   list-style: none;
 }
 body {
+  max-width: 1600px;
   font-family: 'Roboto', sans-serif;
 }
 .container {
   max-width: 1600px;
+}
+header .container {
+  display: flex;
+  align-self: center;
 }
 a {
   color: var(--lblack);
@@ -33,27 +38,23 @@ a:hover {
   color: var(--blue);
 }
 .header {
-  padding-top: 10px;
-  display: flex;
-  height: 69px;
-  justify-content: space-around;
-  padding-bottom: 0;
   border-bottom: 1px solid #ECECEC;
+  padding: 24px 0 25px;
 }
 ul {
   padding: 0px;
 }
 .nav {
   display: flex;
-  gap: 93px;
 }
 .navigation_list {
+  padding-left: 93px;
   list-style: none;
   display: flex;
-  padding-top: 22px;
-  gap: 50px;
 }
 .navigation_list li {
+  padding-top: 8px;
+  padding-right: 50px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -63,12 +64,20 @@ ul {
 }
 
 .contacts {
+  padding-left: 294px;
   list-style: none;
   display: flex;
-  padding-top: 22px;
-  gap: 50px;
+}
+.contacts li {
+  padding-top: 4px;
+  padding-left: 50px;
 }
 .contacts a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--lgray);
 }
 .contacts a:hover {
@@ -77,20 +86,19 @@ ul {
 .logo {
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 16px;
   font: 700 26px 'Raleway', sans-serif;
   text-decoration: none;
   color: var(--blue);
 }
 .logo_header {
+  padding-left: 215px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 16px;
   font: 700 26px 'Raleway', sans-serif;
   text-decoration: none;
   color: black;
 }
-.logo_after:hover {
+.logo_header:hover {
   color: black;
 }
 .hero {
@@ -98,11 +106,12 @@ ul {
   height: 600px;
 }
 .hero h1 {
-  position: relative;
+  /* position: relative;
   width: 696px;
   left: 452px;
   right: 452px;
-  top: 200px;
+  top: 200px; */
+  padding-top: 200px;
   text-transform: uppercase;
   text-align: center;
   font: 900 44px 'Roboto', sans-serif;
@@ -111,10 +120,12 @@ ul {
   letter-spacing: 0.06em;
   line-height: 1.36;
 }
+
 .btn {
-  position: relative;
+  /* position: relative;
   left: 724px;
-  top: 200px;
+  top: 200px; */
+  margin-left: 692px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -153,6 +164,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .section.white2 h2 {
+  padding-bottom: 50px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -191,6 +203,8 @@ ul {
   letter-spacing: 0.03em; 
 }
 .section h2 {
+  margin: 0;
+  padding-bottom: 50px;
   align-self: center;
   font-family: 'Roboto';
   font-style: normal;
