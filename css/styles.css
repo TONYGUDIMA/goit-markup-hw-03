@@ -16,8 +16,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  max-width: 1600px;
-}
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+} 
 header .container {
   display: flex;
   /* align-items: baseline; */
@@ -64,7 +67,7 @@ ul {
 }
 
 .contacts {
-  padding-left: 294px;
+  padding-left: 264px;
   list-style: none;
   display: flex;
 }
@@ -91,7 +94,6 @@ ul {
   color: var(--blue);
 }
 .logo-header {
-  padding-left: 215px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   font: 700 26px 'Raleway', sans-serif;
@@ -100,6 +102,11 @@ ul {
 }
 .logo-header:hover {
   color: black;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero {
   background-color: var(--dgray);
@@ -125,7 +132,7 @@ ul {
   /* position: relative;
   left: 724px;
   top: 200px; */
-  margin-left: 692px;
+  /* margin-left: 662px; */
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -140,8 +147,6 @@ ul {
   cursor: pointer;
 }
 .section {
-  padding-left: 215px;
-  padding-right: 215px;
   display: flex;
   padding-top: 94px;
 }
@@ -239,7 +244,6 @@ ul {
 }
 .footer {
   color: var(--white);
-  padding-left: 215px;
   background-color: var(--dgray);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -302,17 +306,20 @@ ul {
 }
 
 /* ----------------------PORTFOLIO STYLES-------------------------- */
-
+.container.portfolio {
+  width: 1200px;
+  margin-right: 0 auto;
+  padding-left: 15;
+  padding-right: 15px;
+}
 
 .projects {
-  margin-left: 195px;
-  margin-right: 195px;
-  margin-bottom: 294px;
+  justify-items: center;
   display: flex;
-  /* gap: 30px; */
   flex-wrap: wrap;
 }
 .project {
+  width: calc((100% - 90px)/3);
   box-sizing: border-box;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -345,8 +352,8 @@ ul {
 }
 
 .filters {
+  justify-content: center;
   margin-top: 94px;
-  margin-left: 512px;
   margin-bottom: 50px;
   display: flex;
   /* gap: 8px; */
