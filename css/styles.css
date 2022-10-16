@@ -20,7 +20,7 @@ body {
 }
 header .container {
   display: flex;
-  align-self: center;
+  /* align-items: baseline; */
 }
 a {
   color: var(--lblack);
@@ -147,7 +147,10 @@ ul {
 }
 .section.white1 {
   background-color: #F5F5F5;  
-  gap: 30px;
+  /* gap: 30px; */
+}
+.list-items {
+  margin-right: 30px;
 }
 .section.white1 p {
   font-family: 'Roboto';
@@ -178,6 +181,9 @@ ul {
 .section.white2 {
   background-color: #F5F5F5;
   flex-direction: column;  
+} 
+.section.white2 img {
+  margin-right: 30px;
 }
 .section.grey {
   background-color: #F5F4FA;
@@ -185,6 +191,8 @@ ul {
   padding-bottom: 94px;
 }
 .section.grey h3 {
+  margin: 0;
+  padding-top: 30px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -194,6 +202,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .section.grey p {
+  padding: 10px 0px 30px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -216,11 +225,14 @@ ul {
 }
 .cards {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
+  /* padding-right: 30px; */
 }
 .card {
+  margin-right: 30px;
+  box-sizing: border-box;
   width: 270px;
-  height: 368px;
+  /* height: 368px; */
   border: 1px solid #EEEEEE;
   text-align: center;
   background-color: #fff;
@@ -264,10 +276,13 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address ul li  {
+.address ul  {
   padding-top: 20px;
 }
-.address ul li a:hover {
+.address-list-item {
+  padding-top: 9px;
+}
+.address-list-item a:hover {
   color: var(--blue);
   cursor: pointer;
 } 
@@ -288,19 +303,18 @@ ul {
 
 /* ----------------------PORTFOLIO STYLES-------------------------- */
 
+
 .projects {
-  max-width: 1200px;
+  margin-left: 195px;
+  margin-right: 195px;
   margin-bottom: 294px;
-  position: relative;
-  top: 182px;
-  left: 215px;
-  bottom: 94px;
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
   flex-wrap: wrap;
 }
 .project {
-  overflow: auto;
+  box-sizing: border-box;
+  margin-right: 30px;
   margin-bottom: 30px;
   background-color: #fff;
   border: 1px solid #EEEEEE;
@@ -331,11 +345,11 @@ ul {
 }
 
 .filters {
-  position: relative;
-  left: 537px;
-  top: 94px;
+  margin-top: 94px;
+  margin-left: 512px;
+  margin-bottom: 50px;
   display: flex;
-  gap: 8px;
+  /* gap: 8px; */
 }
 .filters :hover {
   background-color: var(--blue);
@@ -345,6 +359,7 @@ ul {
   border-radius: 4px;
 }
 .filter {
+  margin-right: 8px;
   padding: 6px 22px;
   border: 0px;
   background: #F5F4FA;
