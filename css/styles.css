@@ -47,12 +47,12 @@ ul {
 .nav {
   display: flex;
 }
-.navigation_list {
+.navigation-list {
   padding-left: 93px;
   list-style: none;
   display: flex;
 }
-.navigation_list li {
+.navigation-list li {
   padding-top: 8px;
   padding-right: 50px;
   font-family: 'Roboto';
@@ -90,7 +90,7 @@ ul {
   text-decoration: none;
   color: var(--blue);
 }
-.logo_header {
+.logo-header {
   padding-left: 215px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -98,7 +98,7 @@ ul {
   text-decoration: none;
   color: black;
 }
-.logo_header:hover {
+.logo-header:hover {
   color: black;
 }
 .hero {
@@ -245,7 +245,7 @@ ul {
   padding-bottom: 60px;
 
 }
-.logo_footer {
+.logo-footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   padding-top: 16px;
@@ -253,7 +253,7 @@ ul {
   text-decoration: none;
   color: var(--white);
 }
-.logo_footer:hover {
+.logo-footer:hover {
   color: var(--white);
 }
 .address {
@@ -265,7 +265,7 @@ ul {
   cursor: pointer;
 }
 
-.footer_links {
+.footer-links {
   color: #FFFFFF99;
   text-decoration: none;
   padding-bottom: 6px;
@@ -296,7 +296,7 @@ ul {
   color: var(--white);
   text-decoration: none;
 }
-.geo :hover {
+.geo:hover {
   color: var(--blue);
   cursor: pointer;
 }
@@ -351,7 +351,7 @@ ul {
   display: flex;
   /* gap: 8px; */
 }
-.filters :hover {
+.filter:hover {
   background-color: var(--blue);
   color: #FFFFFF;
   opacity: 0.9;
