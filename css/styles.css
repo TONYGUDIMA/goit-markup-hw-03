@@ -240,9 +240,9 @@ ul {
 .footer {
   color: var(--white);
   padding-left: 215px;
-  height: 252px;
   background-color: var(--dgray);
   padding-top: 60px;
+  padding-bottom: 60px;
 
 }
 .logo_footer {
