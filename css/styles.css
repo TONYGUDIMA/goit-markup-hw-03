@@ -330,6 +330,7 @@ ul {
   border: 1px solid #EEEEEE;
 }
 .projects h2 {
+  text-align: start;
   margin: 0;
   color: var(--lblack);
   padding: 24px 10px 10px 24px;
